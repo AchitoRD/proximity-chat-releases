@@ -24,37 +24,32 @@
 - 🔊 **Chat de voz por proximidad** — solo se escucha a quien está cerca
 - 🎮 **Overlay flotante** sobre el juego, sin cambiar de ventana
 - 🔑 **Login con Discord** + verificación de identidad de Roblox vía RoVer
-- 🚀 **Se actualiza solo** — al abrir la app busca la versión más reciente
 
 ## ⬇️ Descarga
 
-Ve a la **[última release](https://github.com/AchitoRD/proximity-chat-releases/releases/latest)** y elige el archivo según tu sistema:
+Ve a la **[última release](https://github.com/AchitoRD/proximity-chat-releases/releases/latest)** y descarga el instalador de tu sistema:
 
-| Archivo | Para quién |
+| Archivo | Sistema |
 |---|---|
-| `Proximity Chat_*_amd64.deb` | Debian, Deepin, Ubuntu y derivadas |
-| `Proximity Chat_*_amd64.AppImage` | Cualquier distribución Linux (x86_64) |
+| `Proximity.Chat_*_amd64.deb` | Linux (Debian, Deepin, Ubuntu y derivadas) |
+| `Proximity.Chat_*_setup.exe` | Windows 🕒 *próximamente* |
 
-### Instalación .deb
-
-```bash
-sudo dpkg -i "Proximity Chat_1.3.1_amd64.deb"
-```
-
-### Instalación AppImage
+### Instalación en Linux (.deb)
 
 ```bash
-chmod +x "Proximity Chat_1.3.1_amd64.AppImage"
-./"Proximity Chat_1.3.1_amd64.AppImage"
+sudo dpkg -i "Proximity.Chat_1.0.1_amd64.deb"
 ```
 
-## 🔄 Actualizaciones
-
-La app **se actualiza automáticamente** al abrirse. También puedes descargar cualquier versión manualmente desde la pestaña [Releases](https://github.com/AchitoRD/proximity-chat-releases/releases).
+> Si dpkg reporta dependencias faltantes: `sudo apt-get install -f`
 
 ## 📦 Versiones
 
-Todas las versiones publicadas, con sus notas de cambio, viven en [Releases](https://github.com/AchitoRD/proximity-chat-releases/releases).
+Todas las versiones publicadas, con sus notas de cambio, viven en la pestaña [Releases](https://github.com/AchitoRD/proximity-chat-releases/releases).
+
+## 🚀 En camino
+
+- 🪟 Instalador para **Windows (.exe)**
+- 🔄 **Actualizaciones automáticas** de la app
 
 ---
 
