@@ -13,7 +13,7 @@
   <a href="https://github.com/AchitoRD/proximity-chat-releases/releases/latest"><img src="https://img.shields.io/github/v/release/AchitoRD/proximity-chat-releases?style=for-the-badge&color=8b5cf6&labelColor=1a1033&label=versi%C3%B3n" alt="Versión"/></a>
   <a href="https://github.com/AchitoRD/proximity-chat-releases/releases"><img src="https://img.shields.io/github/downloads/AchitoRD/proximity-chat-releases/total?style=for-the-badge&color=a855f7&labelColor=1a1033&label=descargas" alt="Descargas"/></a>
   <img src="https://img.shields.io/badge/Linux-.deb-7c3aed?style=for-the-badge&logo=linux&logoColor=white&labelColor=1a1033" alt="Linux"/>
-  <img src="https://img.shields.io/badge/Windows-.exe-7c3aed?style=for-the-badge&logo=windows&logoColor=white&labelColor=1a1033" alt="Windows"/>
+  <img src="https://img.shields.io/badge/Windows-.exe-6d28d9?style=for-the-badge&logo=windows&logoColor=white&labelColor=1a1033" alt="Windows"/>
   <img src="https://img.shields.io/badge/macOS-.dmg-7c3aed?style=for-the-badge&logo=apple&logoColor=white&labelColor=1a1033" alt="macOS"/>
 </p>
 
@@ -67,34 +67,18 @@
 
 ## <img src="https://api.iconify.design/solar/routing-2-bold-duotone.svg?color=%238b5cf6" width="28" height="28" align="absmiddle" alt=""/> Cómo funciona
 
-<table>
-  <tr>
-    <td align="center" width="18%">
-      <img src="https://api.iconify.design/logos/discord-icon.svg" width="40" height="40" alt=""/><br/>
-      <b>Discord</b><br/><sub>Inicias sesión</sub>
-    </td>
-    <td align="center" width="5%"><img src="https://api.iconify.design/solar/alt-arrow-right-bold.svg?color=%238b5cf6" width="26" alt="→"/></td>
-    <td align="center" width="18%">
-      <img src="https://api.iconify.design/solar/verified-check-bold-duotone.svg?color=%238b5cf6" width="40" height="40" alt=""/><br/>
-      <b>RoVer</b><br/><sub>Verifica tu Roblox</sub>
-    </td>
-    <td align="center" width="5%"><img src="https://api.iconify.design/solar/alt-arrow-right-bold.svg?color=%238b5cf6" width="26" alt="→"/></td>
-    <td align="center" width="18%">
-      <img src="https://api.iconify.design/solar/gamepad-bold-duotone.svg?color=%238b5cf6" width="40" height="40" alt=""/><br/>
-      <b>El juego</b><br/><sub>Entras a ERLC</sub>
-    </td>
-    <td align="center" width="5%"><img src="https://api.iconify.design/solar/alt-arrow-right-bold.svg?color=%238b5cf6" width="26" alt="→"/></td>
-    <td align="center" width="18%">
-      <img src="https://api.iconify.design/solar/layers-bold-duotone.svg?color=%238b5cf6" width="40" height="40" alt=""/><br/>
-      <b>Overlay</b><br/><sub>Aparece sobre el juego</sub>
-    </td>
-    <td align="center" width="5%"><img src="https://api.iconify.design/solar/alt-arrow-right-bold.svg?color=%238b5cf6" width="26" alt="→"/></td>
-    <td align="center" width="18%">
-      <img src="https://api.iconify.design/solar/microphone-3-bold-duotone.svg?color=%238b5cf6" width="40" height="40" alt=""/><br/>
-      <b>Hablas</b><br/><sub>Con quien está cerca</sub>
-    </td>
-  </tr>
-</table>
+```mermaid
+flowchart LR
+    A([Inicias sesión con Discord]) --> B([RoVer verifica tu Roblox])
+    B --> C([Abres el juego])
+    C --> D([Aparece el overlay])
+    D --> E([Hablas con quien está cerca])
+    style A fill:#5b21b6,stroke:#8b5cf6,color:#fff
+    style B fill:#6d28d9,stroke:#8b5cf6,color:#fff
+    style C fill:#7c3aed,stroke:#a78bfa,color:#fff
+    style D fill:#8b5cf6,stroke:#c4b5fd,color:#fff
+    style E fill:#a855f7,stroke:#d8b4fe,color:#fff
+```
 
 <br/>
 
@@ -105,15 +89,13 @@ Entra a la **[última release](https://github.com/AchitoRD/proximity-chat-releas
 | | Archivo | Sistema | Estado |
 |:-:|---|---|:-:|
 | <img src="https://api.iconify.design/logos/linux-tux.svg" width="22" alt=""/> | `Proximity.Chat_*_amd64.deb` | Linux (Debian, Ubuntu, Deepin y derivadas) | ✅ Disponible |
-| <img src="https://api.iconify.design/logos/microsoft-windows-icon.svg" width="22" alt=""/> | `Proximity.Chat_*_setup.exe` | Windows | ✅ Disponible |
-| <img src="https://api.iconify.design/simple-icons/apple.svg?color=%238b5cf6" width="22" alt=""/> | `Proximity.Chat_*.dmg` | macOS | ✅ Disponible |
+| <img src="https://api.iconify.design/logos/microsoft-windows-icon.svg" width="22" alt=""/> | `Proximity.Chat_*_x64-setup.exe` | Windows 10 / 11 (64 bits) | ✅ Disponible |
+| <img src="https://api.iconify.design/logos/apple.svg" width="22" alt=""/> | `Proximity.Chat_*_universal.dmg` | macOS (Intel y Apple Silicon) | ✅ Disponible |
 
-## <img src="https://api.iconify.design/solar/settings-bold-duotone.svg?color=%238b5cf6" width="28" height="28" align="absmiddle" alt=""/> Instalación
-
-### <img src="https://api.iconify.design/logos/linux-tux.svg" width="24" height="24" align="absmiddle" alt=""/> Linux
+### <img src="https://api.iconify.design/solar/terminal-bold-duotone.svg?color=%23a855f7" width="24" height="24" align="absmiddle" alt=""/> Instalación en Linux
 
 ```bash
-sudo dpkg -i "Proximity.Chat_1.0.1_amd64.deb"
+sudo dpkg -i "Proximity.Chat_1.0.2_amd64.deb"
 ```
 
 > [!TIP]
@@ -122,13 +104,13 @@ sudo dpkg -i "Proximity.Chat_1.0.1_amd64.deb"
 > sudo apt-get install -f
 > ```
 
-### <img src="https://api.iconify.design/logos/microsoft-windows-icon.svg" width="24" height="24" align="absmiddle" alt=""/> Windows
+### <img src="https://api.iconify.design/solar/desktop-bold-duotone.svg?color=%23a855f7" width="24" height="24" align="absmiddle" alt=""/> Instalación en Windows
 
-Descarga el `.exe` de la [última release](https://github.com/AchitoRD/proximity-chat-releases/releases/latest), ejecútalo y sigue el instalador.
+Abre el `*-x64-setup.exe` y sigue el asistente. Si Windows SmartScreen avisa que la app no es conocida, haz clic en **Más información → Ejecutar de todos modos**.
 
-### <img src="https://api.iconify.design/simple-icons/apple.svg?color=%238b5cf6" width="24" height="24" align="absmiddle" alt=""/> macOS
+### <img src="https://api.iconify.design/solar/laptop-bold-duotone.svg?color=%23a855f7" width="24" height="24" align="absmiddle" alt=""/> Instalación en macOS
 
-Descarga el `.dmg` de la [última release](https://github.com/AchitoRD/proximity-chat-releases/releases/latest), ábrelo y arrastra **Proximity Chat** a tu carpeta de Aplicaciones.
+Abre el `*.dmg`, arrastra **Proximity Chat** a **Aplicaciones** y lánzala. Al abrirlo la primera vez, **clic derecho → Abrir** (la app aún no tiene certificado de Apple).
 
 <br/>
 
@@ -152,8 +134,8 @@ Descarga el `.dmg` de la [última release](https://github.com/AchitoRD/proximity
 - [x] 🔑 Login con Discord + verificación RoVer
 - [x] 🐧 Instalador para Linux (`.deb`)
 - [x] 🪟 Instalador para Windows (`.exe`)
-- [x] 🍎 Instalador para macOS (`.dmg`)
-- [ ] 🔄 Actualizaciones automáticas
+- [x] 🍎 Instalador para macOS (`.dmg`, Intel + Apple Silicon)
+- [x] 🔄 Actualizaciones desde la app (aviso con un clic)
 
 <br/>
 
