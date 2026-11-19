@@ -95,7 +95,7 @@ Entra a la **[última release](https://github.com/AchitoRD/proximity-chat-releas
 ### <img src="https://api.iconify.design/solar/terminal-bold-duotone.svg?color=%23a855f7" width="24" height="24" align="absmiddle" alt=""/> Instalación en Linux
 
 ```bash
-sudo dpkg -i "Proximity.Chat_1.0.2_amd64.deb"
+sudo dpkg -i "Proximity.Chat_1.0.3_amd64.deb"
 ```
 
 > [!TIP]
